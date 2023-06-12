@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/gorevler"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gorevler"
+            android:text="Görevler"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/gunum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gunum"
+            android:text="Günüm"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/takvim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="takvim"
+            android:text="Takvim"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/baslikEkle"
+        android:layout_width="296dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Başlık ekle"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/baslikEklemeButonu"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/baslikEklemeButonu"
+        android:layout_width="67dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#000"
+        android:onClick="baslikEklemeButonu"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        app:cornerRadius="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F3E781"
+        android:text="GÜNÜM"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/baslik"
+        style="@style/baslik"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="1dp">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/adim2"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="2. Adım"
+            android:inputType="text"
+            android:text="" />
+
+        <Button
+            android:id="@+id/sil2"
+            style="@style/buttonSt"
+            android:onClick="sil2"
+            android:text="Sil"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/adim4"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="4. Adım"
+            android:inputType="text"
+            android:text="" />
+
+        <Button
+            android:id="@+id/sil4"
+            style="@style/buttonSt"
+            android:onClick="sil4"
+            android:text="Sil"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslik">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/adim1"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="1. Adım"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/sil1"
+            style="@style/buttonSt"
+            android:onClick="sil1"
+            android:text="Sil"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/adim3"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="3. Adım"
+            android:inputType="text"
+            android:text="" />
+
+        <Button
+            android:id="@+id/sil3"
+            style="@style/buttonSt"
+            android:onClick="sil3"
+            android:text="Sil"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/adim5"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="5. Adım"
+            android:inputType="text"
+            android:text="" />
+
+        <Button
+            android:id="@+id/sil5"
+            style="@style/buttonSt"
+            android:onClick="sil5"
+            android:text="Sil"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/baslikEkle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/kaydetButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#1B000000"
+            android:textColor="#000"
+            android:onClick="kaydet"
+            android:text=" KAYDET" />
+
+        <Button
+            android:id="@+id/bilgiMesaji"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#1B000000"
+            android:textColor="#000"
+            android:onClick="bilgiMesaji"
+            android:text=" BİLGİ" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gorevler">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/gorevler"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gorevler"
+            android:text="Görevler"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/gunum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gunum"
+            android:text="Günüm"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/takvim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="takvim"
+            android:text="Takvim"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F3E781"
+        android:text="GÖREVLER"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="24dp"
+        android:text="BU HAFTA"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/hafta1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Haftanın 1. Görevi"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/hafta2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Haftanın 2. Görevi"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/hafta3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Haftanın 3. Görevi"
+            android:inputType="text"
+            android:text="" />/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:scrollbarSize="20dp"
+        android:text="BU AY"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout123"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ay1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ayın 1. Görevi"
+            android:inputType="text"
+            android:text="" />/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout124"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout123"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout123"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout123">
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ay2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ayın 2. Görevi"
+            android:inputType="text"
+            android:text="" />/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout125"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout124"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout124"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout124">
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/ay3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ayın 3. Görevi"
+            android:inputType="text"
+            android:text="" />/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/baslikEkle"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout125"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout125"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout125">
+
+        <Button
+            android:id="@+id/kaydetButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#1B000000"
+            android:textColor="#000"
+            android:onClick="kaydet"
+            android:text=" KAYDET" />
+
+        <Button
+            android:id="@+id/bilgiMesaji"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#1B000000"
+            android:textColor="#000"
+            android:onClick="bilgiMesaji"
+            android:text=" BİLGİ" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ocak">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/gorevler"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gorevler"
+            android:text="Görevler"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/gunum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gunum"
+            android:text="Günüm"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/takvim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="takvim"
+            android:text="Takvim"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F3E781"
+        android:text="TAKVİM"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/takvimIntentStilleri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="ŞUBAT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <TextView
+            android:id="@+id/tarih19"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:text="19"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih20"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="21"
+            android:text="20"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih21"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="21"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih22"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="22"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih23"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="23"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih24"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="15"
+            android:text="24"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih25"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="25"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih26"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="26"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih27"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="18"
+            android:text="27"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/tarih1"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:text="1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih2"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih3"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih4"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="4"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih5"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih6"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="6"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih7"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="7"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih8"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih9"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="9"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <TextView
+            android:id="@+id/tarih10"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:text="10"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih11"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="11"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih12"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="12"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih13"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="13"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih14"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="14"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih15"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="15"
+            android:text="15"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih16"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="16"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih17"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="17"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih18"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="18"
+            android:text="18"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <TextView
+            android:id="@+id/tarih28"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:text="28"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih29"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="21"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih30"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih31"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih32"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih33"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="15"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih34"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih35"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tarih36"
+            style="@style/takvimIntentNumaraStilleri"
+            android:layout_width="43dp"
+            android:layout_height="33dp"
+            android:layout_weight="18"
+            android:text=""
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

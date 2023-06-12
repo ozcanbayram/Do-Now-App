@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".takvim">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/gorevler"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gorevler"
+            android:text="Görevler"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/gunum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="gunum"
+            android:text="Günüm"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/takvim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#EFE47F"
+            android:onClick="takvim"
+            android:text="Takvim"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F3E781"
+        android:text="Takvim"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/btnOcak"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ocak"
+            android:text="OCAK" />
+
+        <Button
+            android:id="@+id/btnSubat"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ŞUBAT"
+            android:onClick="subat"/>
+
+        <Button
+            android:id="@+id/btnMart"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MART"
+            android:onClick="mart"/>
+
+        <Button
+            android:id="@+id/btnNisan"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NİSAN"
+            android:onClick="nisan"/>
+
+        <Button
+            android:id="@+id/btnMayis"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAYIS"
+            android:onClick="mayis"/>
+
+        <Button
+            android:id="@+id/btnHaziran"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HAZİRAN"
+            android:onClick="haziran"/>
+
+        <Button
+            android:id="@+id/btnTemmuz"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEMMUZ"
+            android:onClick="temmuz"/>
+
+        <Button
+            android:id="@+id/btnAgustos"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AĞUSTOS"
+            android:onClick="agustos"/>
+
+        <Button
+            android:id="@+id/btnEylul"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EYLÜL"
+            android:onClick="eylul"/>
+
+        <Button
+            android:id="@+id/btnEkim"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EKİM"
+            android:onClick="ekim"/>
+
+        <Button
+            android:id="@+id/btnKasim"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KASIM"
+            android:onClick="kasim"/>
+
+        <Button
+            android:id="@+id/btnAralik"
+            style="@style/takvimButonları"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ARALIK"
+            android:onClick="aralik"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

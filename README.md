@@ -1,7 +1,7 @@
 ## Do Now Application (To Do List App)
 
 This project is my first Android project.
-I did it as a university assignment.
+I did it as a school homework.
 In this project:
 5 missions per day
 3 missions per week

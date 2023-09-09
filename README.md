@@ -13,7 +13,7 @@ I develop other projects with Kotlin and Java and continue to improve myself. Wi
 
 # Language and Tools:
 
-![Langs](https://skillicons.dev/icons?i=sqlite,androidstudio,")
+![Langs](https://skillicons.dev/icons?i=kotlin,androidstudio,")
 
 # Photos:
 

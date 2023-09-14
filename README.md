@@ -17,6 +17,12 @@ I develop other projects with Kotlin and Java and continue to improve myself. Wi
 
 # Photos:
 
-![app1](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/19a3d0ed-78c4-42ec-bc0d-a11da11a251c)
-![app2](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/cd83327a-690e-4bd5-bdd7-414e9f730ed7)
-![app3](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/a8890d38-78a8-4e2e-9a3b-e4fb88c498cf)
+![dn1](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/e09b69e1-7a7f-409a-aa98-ca0084a92022)
+![dn2](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/64e82657-1b36-4396-b94e-3750673114f2)
+![dn3](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/c08d039b-2fcd-4027-b4f3-55fc57870cda)
+![dn4](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/7d1495a2-b7ff-4e82-bde5-000b1d4a034e)
+![dn5](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/baea1647-35bf-4ec3-a9b4-788824dca272)
+![dn6](https://github.com/ozcanbayram/Do-Now-App/assets/117665864/73114d8d-7289-4891-9ad1-d0ddaeb1c01d)
+
+
+
